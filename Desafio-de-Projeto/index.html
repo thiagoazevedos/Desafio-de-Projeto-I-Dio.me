@@ -6,17 +6,20 @@
     <title>Desafio de Projeto Dio.me</title>
 </head>
 <body>
-    <h1>Primeiros passos no <i>HTML</i></h1>
+    <h1 id="inicio">Primeiros passos no <i>HTML</i></h1>
     <hr/>
     <h2><u>Índice</u></h2>
     <UL>
-        <LI>Surgimento da Internet</LI>
-        <li>Como funciona o HTML</li>
-        <li>O que são Tags</li>
-        <li>Exemplos de Tags</li>
-        <li>Referências</li>
+        <LI><a href="#surgimento">Surgimento da Internet</a></LI>
+        <li><a href="#como-funciona">Como funciona o HTML</a></li>
+        <li><a href="#clientes-servidores">O que são clients e Servers</a></li>
+        <li><a href="#diferença">Entenda a diferença de lista ordenada e não ordenada</a></li>
+        <li><a href="#Tags">O que são Tags no HTML</a></li>
+        <li><a href="#exemplo">Exemplos de Tags</a></li>
+        <li><a href="#referencia">Referências</a></li>
     </UL>
-    <h2><u>Surgimento da internet</u></h2>
+
+    <h2 id="surgimento"><u>Surgimento da internet</u></h2><small><a href="#inicio">(Voltar)</a></small>
     <p>A internet surgiu como resultado de uma série de avanços tecnológicos e desenvolvimentos ao longo do tempo. Aqui está um resumo das principais etapas do surgimento da internet:</p>
     <p><strong>Década de 1960 - ARPANET:</strong> A pesquisa financiada pelo Departamento de Defesa dos EUA levou à criação da ARPANET, uma rede experimental que conectava quatro universidades. Foi a primeira rede a utilizar o comutação de pacotes, uma tecnologia fundamental para a internet moderna.</p>
     <p><strong>Década de 1970 - Expansão da ARPANET:</strong> A ARPANET cresceu rapidamente, conectando instituições de pesquisa e universidades em todo os Estados Unidos.</p>
@@ -25,8 +28,9 @@
     <p><strong>Década de 2000 - Popularização:</strong> A internet se tornou uma parte essencial da vida cotidiana, com uma ampla gama de serviços online, como e-mail, pesquisa, comércio eletrônico, redes sociais e streaming de mídia.</p>
     <p><strong>Década de 2010 e Além - Expansão e Inovação:</strong> A internet continuou a crescer e se transformar com o surgimento de novas tecnologias, como dispositivos móveis, IoT (Internet das Coisas), redes 5G e serviços de nuvem. A expansão global da internet conectou bilhões de pessoas em todo o mundo.</p>
     <p>Hoje, a internet desempenha um papel fundamental na comunicação, compartilhamento de informações, comércio, pesquisa, entretenimento e muito mais, afetando todos os aspectos da sociedade moderna.</p>
+
     
-    <h2><u>Como funciona o HTML</u></h2>
+    <h2 id="como-funciona"><u>Como funciona o HTML</u></h2><small><a href="#inicio">(Voltar)</a></small>
     <p>O HTML (Hypertext Markup Language) é a linguagem de marcação usada para criar páginas da web. Aqui está uma descrição resumida de como o HTML funciona:</p>
     <p><strong>Estruturação do Conteúdo:</strong> O HTML permite a estruturação de conteúdo em uma página da web. Isso é feito por meio de elementos HTML, como <strong>head</strong>, <strong>body</strong>, <strong>p</strong>, <strong>h1</strong>, <strong>ul</strong>, <strong>a</strong>, etc. Esses elementos são usados para definir cabeçalhos, parágrafos, listas, links e outros componentes de uma página </p>
     <p><strong>Tags e Elementos:</strong> O HTML usa tags para envolver o conteúdo e definir seu significado. As tags geralmente vêm em pares, como <strong>tag</strong> e <strong>/tag</strong>, onde a primeira marca abre um elemento e a segunda marca fecha o elemento. Por exemplo, <strong>p</strong> é usado para começar um parágrafo, e <strong>/p</strong>  é usado para encerrá-lo.</p>
@@ -37,6 +41,80 @@
     <p><strong>Compatibilidade e Padrões:</strong> O HTML é mantido como um padrão pela W3C (World Wide Web Consortium) e evoluiu ao longo dos anos. Para garantir a compatibilidade entre navegadores, é importante seguir os padrões HTML definidos pela W3C.</p>
     <p><strong>Conteúdo Multimídia:</strong> O HTML moderno também permite a incorporação de conteúdo multimídia, como imagens, vídeos e áudio, por meio de elementos como <strong>img</strong>, <strong>video</strong> e <strong>audio</strong>.</p>
     <p>Em resumo, o HTML é a linguagem usada para criar a estrutura e o conteúdo de páginas da web. Ele define como o conteúdo é organizado e apresentado nos navegadores, tornando-o acessível e interativo para os usuários da web.</p>
+
+
+    <h2 id="clientes-servidores"><u>O que são clients e Servers</u></h2><small><a href="#inicio">(Voltar)</a></small>
+    <p>Clientes (clients) e servidores (servers) são dois conceitos fundamentais na computação e nas redes de computadores. Eles desempenham papéis distintos em sistemas de comunicação e compartilhamento de recursos. Aqui está uma explicação breve de cada um:</p>
+    <p><strong>Clientes (Clients):</strong></p>
+    <ol>
+        <li><strong>Definição:</strong> Um cliente é um dispositivo ou programa de computador que solicita e recebe informações, serviços ou recursos de um servidor. Os clientes são normalmente usados por usuários finais ou aplicativos para acessar recursos em uma rede.</li>
+        <li><strong>Função:</strong> Os clientes enviam solicitações para servidores para obter informações ou executar ações específicas. Eles podem ser navegadores da web, aplicativos de e-mail, players de mídia, dispositivos móveis ou qualquer dispositivo ou software que acesse serviços ou recursos em uma rede.</li>
+        <li><strong>Exemplos:</strong> Um navegador da web (como o Google Chrome) é um cliente que solicita páginas da web a servidores para exibi-las ao usuário. Um cliente de e-mail (como o Microsoft Outlook) é usado para enviar e receber e-mails de servidores de e-mail.
+        </li>
+    </ol>
+    <p><strong>Servidores (Servers):</strong></p>
+    <ol>
+        <li><strong>Definição:</strong> Um servidor é um dispositivo ou programa de computador que fornece informações, serviços ou recursos a clientes. Os servidores são projetados para responder a solicitações de clientes e fornecer o que foi solicitado.</li>
+        <li><strong>Função:</strong> Os servidores aguardam e processam as solicitações dos clientes e, em seguida, fornecem os recursos solicitados. Eles são projetados para estar sempre disponíveis e são geralmente configurados com hardware e software robustos.</li>
+        <li><strong>Exemplos:</strong> Servidores web (como o Apache ou o Nginx) hospedam sites e entregam páginas da web a navegadores de clientes. Servidores de banco de dados (como o MySQL ou o Microsoft SQL Server) armazenam dados e respondem a consultas de clientes.</li>
+    </ol>
+    <p>Em resumo, clientes solicitam recursos ou serviços, enquanto servidores fornecem esses recursos ou serviços. Essa divisão de funções é fundamental para o funcionamento de redes de computadores e da internet, permitindo que dispositivos e aplicativos se comuniquem e compartilhem informações de forma eficaz.</p>
+
+
+    <h2 id="diferença"><strong><u>Entenda a diferença de lista ordenada e não ordenada</u></strong></h2><small><a href="#inicio">(Voltar)</a></small>
+    <p>Listas ordenadas e não ordenadas são dois tipos de listas HTML que são usadas para organizar informações em uma página da web. A principal diferença entre elas está na forma como os itens da lista são exibidos e numerados (ou não numerados). Aqui está a diferença entre as duas:</p>
+
+    <p><strong>Lista Ordenada (Ordered List) - oL: </strong><p>
+    <p>Uma lista ordenada começa com a tag . Cada item de lista começa com a tag. Os itens da lista serão marcados com números por padrão:</p>
+    <p><strong>Lista Não Ordenada (Unordered List) - ul:</strong></p>
+
+    <p>Uma lista não ordenada começa com a tag . Cada item de lista começa com a tag. Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão</p>
+
+
+    <h2 id="Tags"><u>O que são Tags no HTML</u></h2><small><a href="#inicio">(Voltar)</a></small>
+    <p>No HTML (Hypertext Markup Language), as "tags" são elementos fundamentais que são usados para marcar ou envolver diferentes partes do conteúdo de uma página da web. As tags são usadas para definir a estrutura e o significado do conteúdo, permitindo que os navegadores e outros programas interpretem e exibam a página de maneira apropriada. Aqui estão algumas características importantes das tags HTML:</p>
+    <ul>
+        <li><strong>Sintaxe:</strong> As tags HTML são escritas entre colchetes angulares ("<" e ">") e geralmente vêm em pares, com uma tag de abertura e uma tag de fechamento correspondente. Por exemplo, <strong><'p'></strong> é uma tag de abertura para um parágrafo, e <strong><'/p'></strong> é a tag de fechamento que encerra o parágrafo.</li>
+        <li><strong>Elementos:</strong> Uma tag HTML junto com seu conteúdo é chamada de "elemento". Por exemplo, <strong><'p'></strong> é um elemento do parágrafo. <strong><'/p'></strong> é um elemento de parágrafo.</li>
+        <li><strong>Atributos:</strong> Muitas tags HTML podem conter atributos que fornecem informações adicionais sobre o elemento. Por exemplo, <'img src="imagem.jpg" alt="Descrição da imagem"> usa os atributos <strong>src</strong> e <strong>alt</strong> para especificar a fonte e a descrição de uma imagem.</li>
+        <li><strong>Hierarquia:</strong> As tags HTML podem ser aninhadas umas dentro das outras para criar uma hierarquia de elementos. Por exemplo:</li>
+    </ul>
+    <img src="C:\Users\embod\Documents\Meus_Projetos_DiO\Desafio-de-Projeto-I-Dio.me\Imagem\Captura da Web_4-9-2023_3531_.jpeg" alt="Tags">
+    <p>Neste exemplo, as tags <'ul> (lista não ordenada) contêm duas tags <'li> (itens de lista).</p>
+    <p><strong>Significado Semântico:</strong> As tags HTML têm significados semânticos específicos que indicam o tipo de conteúdo que elas envolvem. Por exemplo, <'h1> é uma tag de cabeçalho de nível 1, indicando um título principal, enquanto <'p> é uma tag de parágrafo, indicando um bloco de texto.</p>
+    <p><strong>Renderização:</strong> Os navegadores interpretam as tags HTML e as usam para renderizar a página da web, determinando como o conteúdo deve ser exibido na tela.</p>
+    <p>As tags HTML são a base da marcação de conteúdo na web e são essenciais para criar documentos estruturados e formatados de maneira consistente. Cada tag HTML tem uma finalidade específica e é usada para definir diferentes partes de uma página, como títulos, parágrafos, imagens, links e muito mais.</p>
+    
+    
+    <h2 id="exemplo"><u>Exemplos de Tags</u></h2><small><a href="#inicio">(Voltar)</a></small>
+    <p>10 tags HTML básicas e suas funções:</p>
+    <ol>
+        <li> <strong><'!DOCTYPE></strong> - Define o tipo de documento e a versão do HTML sendo usada. Por exemplo, <strong> <'!DOCTYPE html></strong> define um documento HTML5.</li>
+        <li> <strong><'html></strong> - Define o elemento raiz de um documento HTML. Todo o conteúdo da página deve estar contido entre as tags <strong><'html></strong> e <strong><'/html></strong>.</li>
+        <li> <strong><'head> </strong>- Contém informações sobre o documento, como o título da página, metadados, links para folhas de estilo e scripts. Não é visível na página.</li>
+        <li><strong><'title></strong> - Define o título da página que é exibido na barra de título do navegador ou na guia da página.</li>
+        <li><strong><'meta></strong> - Define metadados do documento, como a codificação de caracteres, descrição e autor. É usado pelos motores de busca e navegadores.</li>
+        <li><strong><'link></strong> - Usado para vincular um documento HTML a uma folha de estilo externa, como um arquivo CSS.</li>
+        <li><strong><'script></strong> - Define scripts JavaScript que são executados no navegador do usuário. Pode ser incluído diretamente na página ou vinculado a um arquivo externo.</li>
+        <li><strong><'body></strong> - Contém o conteúdo visível da página, incluindo texto, imagens, links e outros elementos.</li>
+        <li><strong><'h1> a <'h6></strong> - Define cabeçalhos de níveis diferentes. <strong><'h1></strong> é o mais alto e <strong><'h6></strong> é o mais baixo. São usados para estruturar e destacar títulos e subtítulos.</li>
+        <li><strong><'p></strong> - Define um parágrafo de texto. É usado para organizar o texto em blocos separados.</li>
+    </ol>
+    <p>Essas são algumas das tags HTML mais básicas e essenciais usadas para estruturar e formatar documentos da web. Existem muitas outras tags disponíveis para diferentes fins, como listas, links, imagens, formulários e muito mais, que permitem criar páginas web ricas e interativas.</p>
+   
+   
+    <h2 id="referencia"><u>Referências</u></h2><small><a href="#inicio">(Voltar)</a></small>
+    <ul>
+        <li><a href="https://www.dio.me/" target="_blank" title="clique Aqui">Dio.me </a> 
+        </li>
+        <li><a href="https://www.w3schools.com/" title="clique Aqui" target="_blank" >w3schools </a>
+        </li>
+        
+    </ul>
+
+
+    
+
 
 
 
